@@ -21,7 +21,7 @@ int f (int x, int y)
   int r = 1; /* Line 21 */
   while (e > 0) /* Line 22 */
   //@loop_invariant e >= 0; /* Line 23 */
-  //@loop_invariant POW(b, e) * r == POW(x, y);
+  //@loop_invariant POW(b, e) * r== POW(x, y);
   {
     if (e % 2 == 1) { /* Line 26 */
       r = b * r;      /* Line 27 */
